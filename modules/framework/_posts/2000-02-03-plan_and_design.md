@@ -16,7 +16,13 @@ Humans-in-the-loop, or the people who are actually responsible for using the alg
 
 Importantly, not every stakeholder has the same needs when it comes to algorithmic transparency, and so those implementing transparency should be thoughtful about each type of stakeholder. There are 5 categories of stakeholders that you should consider (note that not every algorithm will have all 5 stakeholders):
 
-\input{tables/stakeholders}
+| **Stakeholder**         | **Definition**                                                                                                                                                                        |
+|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Practitioners**       | The technical practitioners that are developing, implementing, and maintaining algorithmic systems. They include _data scientists, engineers, programmers, developers, and analysts._ |
+| **Managers**            | The individuals at many different levels in an organization that oversee algorithmic decision-making tools. They include _project managers, business developers, and executives._     |
+| **Affected persons**    | The people who are impacted by the algorithm. For example, if an algorithm is being used to assess job applicants, the job applicants are the affected persons.                       |
+| **Humans-in-the-loop**  | The individuals who are responsible for using the algorithm. Humans-in-the-loop may also be called _algorithm managers or users._                                                     |
+| **Compliance officers** | Persons who oversee the legal compliance of algorithms, and may include _auditors and policymakers._                                                                                  |
 
 For each algorithm you identified during the inventory phase, you should consider **each of the stakeholder categories above.** Furthermore, you may want to prioritize your list of stakeholders and weigh their needs differently. For example, it may be more meaningful to meet the transparency needs of affected persons over managers or compliance officers.
 
@@ -30,7 +36,14 @@ After you have determined the stakeholders of each system in your organization, 
 
 Broadly, the goals of transparency are ensuring validity, building trust, assisting in learning and support, supporting recourse, and ensuring fairness and privacy. These goals are below:
 
-\input{tables/goals}
+| Goal                 | Definition                                                                        | Example                                                                                                 |
+|----------------------|-----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
+| Validity             | Making sure the system is constructed correctly, debugging a system               | The programmers, engineers, and managers may use transparency to ensure the system is valid and correct |
+| Trust                | Knowing "how often the system is right"                                           | A policymaker or auditor may use transparency to gain trust in the ADS                                  |
+| Learning and Support | Increasing general understanding about how an algorithm reaches a decision        | A doctor may use transparency to better understand an algorithms predicted diagnosis of a patient       |
+| Recourse             | Allowing affected persons to take action against a decision                       | An individual may use transparency about an algorithm to appeal a loan rejection                        |
+| Fairness             | Ensuring that an algorithm is not making decision biased against a minority group | An auditor may use transparency to make sure that an algorithm is not biased                            |
+| Privacy              | Ensuring that an algorithm respects the data privacy of individuals               | An auditor may use transparency to make sure that an algorithm is not violating data privacy laws       |
 
 One critical goal for transparency is the idea of **recourse** (sometimes called redress), which is the ability of a person affected by the outcome of an algorithm to see why that decision was made and what they can do to change that outcome. For example, if an algorithm is used to determine whether or not an individual is accepted or rejected for a loan, that individual should be able to see why that decision was made so they can take actions to change the decision in the future (ex. improve credit score). Notably, recourse has become a popular idea among policymakers, and there is proposed legislation in both the United States and Europe that would mandate designing algorithms that allow recourse for affected persons.
 
@@ -44,7 +57,9 @@ When possible, ideas from **participatory design** should always be used to dete
 
 Once you have inventoried your list of stakeholders and their needs, you are ready to begin designing transparency features for your algorithmic systems. Importantly, this should be a collaborative design process between _technical and non-technical__ persons within your organization. Technical experts (like practitioners, data scientists, data engineers, programmers, and analysts) will have additional knowledge on how to implement transparency features (this is further detailed later in the course).
 
-Importantly, there are two levels of transparency you need to consider, called the \textbf{scope of transparency.} The first is \textbf{local} transparency, which provides understanding about a single decision made by an algorithm (ex. a single loan applicant), and second is \textbf{global} transparency, which explains how an algorithm works overall. Global transparency can give a ``bird’s-eye view'' of an algorithmic decision-making system, whereas local transparency focuses in on a particular bird or set of birds.
+Importantly, there are two levels of transparency you need to consider, called the **scope of transparency.** The first is **local** transparency, which provides understanding about a single decision made by an algorithm (ex. a single loan applicant), and second is **global** transparency, which explains how an algorithm works overall. Global transparency can give a "bird’s-eye view" of an algorithmic decision-making system, whereas local transparency focuses in on a particular bird or set of birds.
+
+> **Local transparency** refers to understanding how an algorithmic system makes a decision about a single case or instance, and **global transparency** refers to understanding how an system works overall. For example, for an algorithmic system that predicts whether or not an applicant is accepted for a loan, global transparency would describe how the entire system works, and local transparency would describe the system’s prediction for a single loan applicant.
 
 There are many types of transparency features you want to consider that extend even beyond the scope of this playbook, but here we detail 5 ideas:
 
@@ -68,8 +83,6 @@ Unfortunately, many highly sophisticated algorithms like **random forests** and 
 
 - The **attribute importance** _(also called feature importance or factor importance)_ of an algorithm is a list that shows all the different attributes (sometimes called features or factors) that are considered by an algorithm, and their relative weights. It offers **global transparency** for an algorithm.
 
-> **Local transparency** refers to understanding how an algorithmic system makes a decision about a single case or instance, and **global transparency** refers to understanding how an system works overall.
-
 For example, consider an algorithm that makes predictions on whether or not an individual should receive a loan. The attribute importance could be made up of three attributes: an individual's income, their credit history, and their education level. The weights for these attributes in the algorithm’s decision-making may be 40% income, 40% credit history, and 20% education level.
 
 There are three advantages to using attribute importance. First, attribute importance can be created for any algorithm, no matter how complicated it is. Second, there are a lot of interesting ways to display attribute importance to a human user through data visualizations. Third, from a technical perspective, it is easy to extract the attribute importance from an algorithm.
@@ -80,7 +93,7 @@ For example, consider again an algorithm that makes predictions on whether or no
 
 Generally, when attribute influence is implemented as a transparency measure for an algorithm, individuals are shown the top 3 to 5 attributes that are influencing the algorithm’s output. Importantly, since attribute influence offers local transparency, it is extremely useful in offering **recourse** to affected persons of an algorithm. It is also very useful for human-in-the-loop users who need transparency for the purposes of decision support.
 
-Given all these options, it can be hard to find the best path forward for implementing. In fact, because transparency is so intrinsically tied with design, there are no "objectively correct" answers. Research has even revealed some counter-intuitive ideas about transparency, like offering too much information to users can actually confuse them due to information overload~\cite{DBLP:conf/chi/LiaoGM20, narayanan2018humans}. This emphasizes the importance of thoughtful design, and when possible, participatory design.
+Given all these options, it can be hard to find the best path forward for implementing. In fact, because transparency is so intrinsically tied with design, there are no "objectively correct" answers. Research has even revealed some counter-intuitive ideas about transparency, like offering too much information to users can actually confuse them due to information overload. This emphasizes the importance of thoughtful design, and when possible, participatory design.
 
 As another guideline, it is not sufficient to try and apply general, one-size-fits-all design like simply implementing a transparency label. First, it is unlikely to achieve all stakeholder goals for transparency. Second, it will likely not be regulatory compliant: both the proposed Algorithmic Accountability Act in the United States and the Artificial Intelligence Act in the European Union specifically mention that algorithmic transparency should allow individuals to have recourse against a system’s outcome, which implies the use of local transparency like attribute influence. Many other countries around the world have also begun considering similar legislation.
 
