@@ -8,7 +8,7 @@ There are a wide range of transparency tools available – some of which have be
 
 <br>
 
-### Intrinsic explainability mechanisms}
+### Intrinsic explainability mechanisms
 
 Some algorithms have built-in tools for explainability. These include algorithms like [decision trees](https://scikit-learn.org/stable/modules/tree.html), [linear models](https://scikit-learn.org/stable/modules/linear_model.html), and [rules-list](https://christophm.github.io/interpretable-ml-book/rules.html) where artifacts like the tree diagram, the linear formula, and a list of if-then rules, respectively can be easily extracted from the model. Researchers have also developed experimental methods for extracting intrinsic explainablity from black-box. One such example is [Self-Explaining Nueral Networks](https://arxiv.org/abs/1806.07538).
 
