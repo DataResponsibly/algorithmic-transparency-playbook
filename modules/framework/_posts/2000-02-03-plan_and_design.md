@@ -1,5 +1,5 @@
 ---
-title: Step 2: Plan and Design
+title: Step 2 - Plan and Design
 ---
 
 ## Step 2: Plan & design transparency for your algorithms

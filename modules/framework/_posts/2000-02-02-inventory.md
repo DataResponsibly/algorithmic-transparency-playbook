@@ -19,6 +19,3 @@ The algorithm itself can range from being deceptively simple to extraordinarily 
 Some examples of algorithmic decision-making systems include hiring tools, predictive algorithms, and smart metering. Predictive algorithms have a wide range of applications including predicting student performance, chance of hospital re-admission, risk of diseases, whether not a loan applicant should be accepted or rejected, or the likelihood a user will click on an advertisement.
 
 > **OUTPUT** An inventory list of all the algorithms in your organization.
-
-
-
