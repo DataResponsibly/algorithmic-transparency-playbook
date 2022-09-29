@@ -2,6 +2,8 @@
 title: FAQ on algorithmic transparency
 ---
 
+# Commonly asked questions about algorithmic transparency
+
 By the time you finish this course, you should have a deep understanding of algorithmic transparency. But to begin, consider the following commonly asked question about algorithmic transparency:
 
 <br>

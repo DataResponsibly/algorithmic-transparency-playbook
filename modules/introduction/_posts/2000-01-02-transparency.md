@@ -2,7 +2,7 @@
 title: Defining algorithmic transparency
 ---
 
-##How do we define "transparency?"
+## How do we define "transparency?"
 
 There is no single definition for **transparency.** For the purposes of this course, we define transparency as **“the ability of a human to understand an algorithmic system’s decision-making.”** This is a very broad definition, and may have different meanings depending on the context. For example, in one context, transparency may mean that people are able to anticipate what decision an algorithmic system would make, and in another context it could mean knowing the list of factors that are taken into account by the algorithmic system.
 
