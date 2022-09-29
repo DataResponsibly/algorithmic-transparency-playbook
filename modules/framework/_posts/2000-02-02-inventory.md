@@ -1,5 +1,5 @@
 ---
-title: Inventory
+title: Step 1: Inventory
 ---
 
 ## Step 1: Iventory your algorithmic systems
