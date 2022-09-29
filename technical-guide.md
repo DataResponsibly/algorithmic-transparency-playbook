@@ -2,7 +2,7 @@
 layout: page
 ---
 
-## Technical Guide: A Survey of Transparency Methods
+## A Survey of Transparency Methods
 
 There are a wide range of transparency tools available – some of which have been around well before the resurgence of AI, and some developed in recent years. Here we catalog a number of known methods, provide a short several details relevant to their implementation, and links to relevant documentation (when applicable). Note that the XAI field is in constant flux and new methods for explainability are being developed on a near-yearly basis.
 
