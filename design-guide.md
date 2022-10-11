@@ -2,48 +2,37 @@
 layout: page
 ---
 
-## A Survey of Transparency Methods
+## \begin{itemize}
+\item \textbf{Make Explanations About a Decision Useful and Actionable}. Not all explanations have the same utility for stakeholder goals. This is particularly true for transparency mechanisms that are implemented for the purposes of of \textbf{recourse} or redress by an affected individual against an algorithm’s output~\cite{barocas2020hidden}.
 
-There are a wide range of transparency tools available – some of which have been around well before the resurgence of AI, and some developed in recent years. Here we catalog a number of known methods, provide a short several details relevant to their implementation, and links to relevant documentation (when applicable). Note that the XAI field is in constant flux and new methods for explainability are being developed on a near-yearly basis.
+For example, consider an algorithm that determines whether or not an applicant will be accepted or rejected for a loan based on factors like income, age, and credit score. If an applicant is denied a loan and explanations are generated automatically by SHAP, it may tell the individual that the most important feature impacting the decision was their age – which is something that the individual can do nothing about. Similarly, a counterfactual explanation telling the applicant that they must increase their income 10-fold may be comparatively much more difficult than a small improvement in credit score~\cite{liao2021human}.
 
-<br>
+\emph{Key question:} is the way transparency has been implemented actually useful in meeting the goals of the stakeholders? Note that involving stakeholders in the design process may be critical to avoid implementing useless and in-actionable explanations.
 
-### Intrinsic explainability mechanisms
+\item \textbf{Less May be More.} One’s initial instinct when implementing transparency for automated decision systems is to provide as much information as possible about the system. While it’s important to be open about many aspects of automated decision systems (especially with respect to how fair or trustworthy they are), overloading stakeholders with information may actually have the counterintuitive effect of making a system seem \emph{more} opaque. This is not always the case, but there are notable research studies showing negative impacts on the perceived understanding of decision systems by users due to information overload~\cite{bell2022s}.
 
-Some algorithms have built-in tools for explainability. These include algorithms like [decision trees](https://scikit-learn.org/stable/modules/tree.html), [linear models](https://scikit-learn.org/stable/modules/linear_model.html), and [rules-list](https://christophm.github.io/interpretable-ml-book/rules.html) where artifacts like the tree diagram, the linear formula, and a list of if-then rules, respectively can be easily extracted from the model. Researchers have also developed experimental methods for extracting intrinsic explainablity from black-box. One such example is [Self-Explaining Nueral Networks](https://arxiv.org/abs/1806.07538).
+\emph{Key question:} has too much transparency been implemented into the system in such a way that stakeholders may be confused or misled? Note that involving stakeholders in the design process may be critical to avoid implementing useless and inactionable explanations.
 
-<br>
+\item \textbf{Don't Manipulate Users.} While it should go without saying, transparency mechanisms should not be implemented in a way that deceives or manipulates the stakeholders of automated decision systems. Researchers have uncovered ``\emph{dark patterns}'' of transparency that can create a false sense of security for users, and trick them into believing the system is trustworthy or fair when the underlying model is biased against minority groups.
 
-### Counterfactual explanations
+Here are two more examples of dark patterns: first, in one context, researchers found that giving users large volumes of information may arbitrarily make a model appear more fair or trustworthy, even when the additional information has nothing at all to do with the relative fairness of the model~\cite{schoeffer2022there}. Second, research has shown that data visualizations can successfully be used to misrepresent a message through techniques like exaggeration or understatement~\cite{ehsan2021explainability}.
 
-A full discussion of counterfactual explanations can be found [here](https://christophm.github.io/interpretable-ml-book/counterfactual.html), but in summary, counterfactual explanations are local example-based explanations that are used to show how changes in input features impact outputs.
+A taxonomy of dark patterns can be found \href{https://arxiv.org/pdf/2109.12480.pdf}{here}. It’s important for those implementing transparency to be aware of dark patterns and pitfalls in transparency so they can be audited for and removed from their work.
 
-For counterfactual explanations of a single individual, features are perterbutated to see the impact on the outcome. For example, one can modify an individual's income or education level to understand how that would influence an algorithm’s decision to grant or deny them a loan.
+\emph{Key question:} is the way transparency has been implemented fair, honest, and ethical?
 
-<br>
+\item \textbf{Consider the Performance-Use Paradox.} The performance-use paradox is a phenomena that was observed for an automated decision system implemented in a public employment setting wherein the users of the system claimed that while they rarely used the output and explanations generated by the system, they preferred having the system as opposed to having it removed. The reason for this phenomena was that users felt more confident in their own decision-making, but liked having the system’s output and explanation as a ``potential backup''~\cite{zejnilovic2020algorithmic}.
 
-### Post-hoc explainability methods
+For designers of transparent automated decision systems, the performance-use paradox provides an important lesson in understanding that the system may not be the primary means for decision-making, but at worst should be providing explanations that can be used to support and back-up decisions made by human users.
 
-Post-hoc explainability methods can be very useful for creating explanations of both black-box and interpretable models. These methods generate local explanations about an input into an already trained algorithm or model (hence "post-hoc"). In order of popularity, the most commonly used are SHAP, LIME, and QII. There is also a new method known as SAGE by the creators of SHAP that provides global model explanations.
+\emph{Key question:} is the way transparency has been implemented supporting decision-making in a way that users will be comfortable having the system as a potential backup?
 
-In industry, SHAP is the most commonly used post-hoc explainability method. This is because it is intuitive and easy to implement due its well-maintained [Python package](https://shap.readthedocs.io/en/latest/index.html). An implementation of SHAP could include showing stakeholders the top 3 factors that influence their output positively, and the 3 factors that influence their output negatively.
+\item \textbf{Transparency is Not Inherent to any System or Algorithm.} Many practitioners and researchers in the machine learning community have created a list of algorithm types that are commonly accepted as being transparent (also called “interpretable”), which consists of linear models, decision trees, and rules-based models. These algorithms are those with \emph{intrinsic transparency mechanisms}, like their linear formula, tree diagram, and rules-list, respectively.
 
-While there are many positives to post-hoc explainability methods like SHAP (intuitive, easy to understand), there are several weaknesses that should be noted: (1) there are several examples of instability in post-hoc explanations where similar inputs yield very different explanations, (2) features identified by SHAP as important are not necessarily those which are actionable, important, or meaningful to stakeholders (3) post-hoc explainability methods are vulnerable to adversarial attacks, (4) the built-in visualizations created by SHAP were designed for data scientists and are not always useful or easily understood by other stakeholders.
+However, recent research has called into question the inherent transparency of these algorithms. For example, it was shown that tree diagrams offer very poor transparency when it comes to having stakeholders identify the most important attribute used in the system’s decision process~\cite{bell2022s}.
 
-<br>
+Furthermore, it is important to consider the complexity of these algorithms. If a linear model or rules-list is made up of hundreds or thousands (or more) of rules it will likely no longer be inherently transparent to stakeholders. In fact, one could make an argument that a small neural network with only a few nodes may be more transparent than large rules-lists.
 
-### Crosstabs
+The implication of this design principle is that designers must always consider the value of additional transparency mechanisms even when working with simple algorithms like linear models, decision trees, and rules-based models.
 
-Crosstabs are a model agnostic method that provide global or group-level explanations about the outputs of a model. Crosstabs are simply summaries of the top 10-25% highest (or lowest) scored outputs of an algorithm.
-
-For example, crosstabs for an algorithm used to predict whether or not an individual will be approved for a loan may show that the 10% most likely to be approved have an average income of $100,000 and a credit score of 750, versus the 10% most likely to be denied which may have an average income of $15,000 and a credit score of 350.
-
-One advantage of crosstabs is that they can be used to provide group level explanations. One such use-case is comparing crosstabs between members of different protected groups to understand the fairness of your algorithm.
-
-<br>
-
-### Simplifying algorithms
-
-One technique that can improve the explainability of complex algorithms is replacing them with simpler models that make similar predictions. In many cases (but not all), simpler models can be used to approximate the outputs made by more complex models. To do this, create a simpler model and compare the outputs of that model using [Jaccard plots of similarity](https://en.wikipedia.org/wiki/Jaccard_index). Indications of high similarity may show that you can drastically reduce the feature space of a model while maintaining high fidelity to the models original output.
-
-There are also methods for directly reducing the complexity of models, like select-regress-round where complex linear models are reduced to short rules-list. Empirical evidence shows that in many cases using select-regress-round does not significantly impact the accuracy of an algorithm.
+\emph{Key question:} is the way transparency has been implemented robust beyond intrinsic transparency mechanisms?
