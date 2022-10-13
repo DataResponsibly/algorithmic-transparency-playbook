@@ -1,5 +1,5 @@
 ---
-title: Using the checklist (Part II)
+title: Public Employment (Using the Transparency Checklist)
 ---
 
 ## Using the Algorithmic Transparency Checklist
