@@ -3,16 +3,16 @@ layout: base
 ---
 
 <!-- Banner -->
-<div class="mumbo-jumbo">
-	<img class="mask" src="{{site.baseurl}}/img/jumbotron-mask.svg" />
-	<div class="overlay">
+<div class="jumbotron jumbotron-fluid">
+	<div class="container text-center">
+		{% if site.jumbotron_icon %}
+		<img src="{{ site.baseurl }}/img/example-jumbotron.png" alt="{{ site.title }} Icon" />
+		{% endif %}
 		<h1>{{ site.data.course.title }}</h1>
-	  <p class="lead">{{site.data.course.description}}</p>
+    <p class="lead">{{site.data.course.description}}</p>
+
 	</div>
-	<!-- <img src="{{site.baseurl}}/img/RAI-banner.png" width=80%/> -->
-	 <img src="{{site.baseurl}}/img/example-jumbotron.png" />
-	  
-  </div>
+</div>
 
 <div class="container">
 	<div class="row">
