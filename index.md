@@ -3,18 +3,6 @@ layout: index
 published: true
 ---
 
-Here is some text
-* **[Link](/modules/setup/getting-started/)** -
-* bulleted list
+Welcome to 2033, the year when AI, while not yet sentient, can finally be considered responsible. Only systems that work well, improve efficiency, are fair, law abiding, and transparent are in use today. It's AI nirvana. You ask yourself: _``How did we get here?''_
 
-<br> 
-
-#### Markdown style heading
-
-Here are some examples of Course-in-a-Box in the wild:
-
-* [We Are AI](https://dataresponsibly.github.io/we-are-ai/) by Center for Responsible AI
-
-<br> 
-
-p.s. Designing a course for learning circles? [Check out the Learning Circle Course Creation guide](https://docs.google.com/document/u/1/d/116fJM3GS7XDzilUOL_ynMZ0yTncUD6aVUbcQKsTra6U/edit#heading=h.l36tzg40xcgr) for some best practices on course design.
+You may have played a major role! As more organizations use algorithmic systems, there is a **need for practitioners, industry leaders, managers, and executives to take part in making AI responsible.** In this course, we provide a playbook, detailing how to influence change and implement algorithmic transparency for your organization's algorithmic systems.
