@@ -1,5 +1,5 @@
 ---
-title: Using the checklist
+title: Using the checklist (Part II)
 ---
 
 ## Using the Algorithmic Transparency Checklist
