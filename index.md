@@ -7,4 +7,6 @@ Welcome to 2033, the year when AI, while not yet sentient, can finally be consid
 
 You may have played a major role! As more organizations use algorithmic systems, there is a **need for practitioners, industry leaders, managers, and executives to take part in making AI responsible.** In this course, we provide a playbook, detailing how to influence change and implement algorithmic transparency for your organization's algorithmic systems.
 
+This course is [published](https://doi.org/3544549.3574169) in the 2023 ACM CHI Conference on Human Factors in Computing Systems proceedings.
+
 To get started, proceed to the first module [All-About-Transparency](https://dataresponsibly.github.io/algorithmic-transparency-playbook/modules/all-about-transparency/index/).
