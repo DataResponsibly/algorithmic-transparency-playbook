@@ -14,11 +14,11 @@ Implementing transparency features is a technical process that may include creat
 
 Below we show two different examples of implemented transparency features:
 
-[ ADD FIGURE ]
+<center><img src="../../../img/titanic-explainer.png" alt="Dashboard" width="100%"/></center>
 
 The graphic above is a dashboard that shows the attribute influence for a particular individual. The left side of the dashboard labeled “Model Input” shows different characteristics about an individual like the bill amount (in dollars), the individual’s sex, and whether or not they are smoker. The right side of the graphic displays the top 5 attribute influences, and shows positive and negative influences on the algorithm’s output in green and red respectively.
 
-[ ADD RANKING FACTS FIGURE ]
+<center><img src="../../../img/ranking_facts.png" alt="Ranking Facts" width="100%"/></center>
 
 The figure above shows a transparency label for an algorithm and comes from the tool RankingFacts. It shows the “recipe” for the algorithm (those attributes that are considered and their relative weights), as well additional information about the ingredients. This transparency label also shows measures related to the fairness of the algorithm, like how different subgroups are being classified.
 
