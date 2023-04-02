@@ -14,7 +14,7 @@ Implementing transparency features is a technical process that may include creat
 
 Below we show two different examples of implemented transparency features:
 
-<center><img src="../../../img/titanic-explainer.png" alt="Dashboard" width="100%"/></center>
+<center><img src="../../../img/titanic_explainer.png" alt="Dashboard" width="100%"/></center>
 
 The graphic above is a dashboard that shows the attribute influence for a particular individual. The left side of the dashboard labeled “Model Input” shows different characteristics about an individual like the bill amount (in dollars), the individual’s sex, and whether or not they are smoker. The right side of the graphic displays the top 5 attribute influences, and shows positive and negative influences on the algorithm’s output in green and red respectively.
 
