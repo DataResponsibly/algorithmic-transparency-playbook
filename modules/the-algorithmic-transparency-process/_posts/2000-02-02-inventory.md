@@ -1,5 +1,5 @@
 ---
-title: Iventory
+title: Iventory your algorithms
 ---
 
 ## Iventory your algorithmic systems
