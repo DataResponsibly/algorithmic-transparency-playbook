@@ -2,7 +2,9 @@
 title: Plan and design for transparency
 ---
 
-## Step 2: Plan & design transparency for your algorithms
+_Suggested time: 10 minutes_
+
+## Plan & design transparency for your algorithms
 
 Once you have identified all the algorithmic decision-making systems within your organization, it is time to begin planning and designing how transparency will be used in those algorithms. In the case of procured tools, these steps will likely involve engaging with the organization that owns the algorithm.
 

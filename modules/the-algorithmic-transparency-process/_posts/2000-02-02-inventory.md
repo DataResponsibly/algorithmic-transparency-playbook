@@ -2,6 +2,8 @@
 title: Iventory your algorithms
 ---
 
+_Suggested time: 5 minutes_
+
 ## Iventory your algorithmic systems
 
 The first step in implementing algorithmic transparency is to understand everywhere that algorithmic decision-making systems are being used within your organization.
@@ -12,7 +14,8 @@ The first step in implementing algorithmic transparency is to understand everywh
 
 The definition of an **algorithmic system** is quite broad, and includes any system that relies on the analysis of data to derive algorithms for making decisions. Other names for these tools are _automated decision systems, artificial intelligence (AI) systems, machine learning (ML) systems, or data science systems._ In general, algorithmic tools receive a data input, process that input through an algorithm, and then produce an output in the form of a decision.
 
-> For example, algorithmic decision-making systems may be used by a company to determine if a loan applicant should be accepted or rejected. In this example, the input would be a loan application, and the output would be the decision to accept or reject that loan application.
+<!---
+> For example, algorithmic decision-making systems may be used by a company to determine if a loan applicant should be accepted or rejected. In this example, the input would be a loan application, and the output would be the decision to accept or reject that loan application. -->
 
 > From here forward, we will refer to algorithmic systems in shorthand as either _algorithmic decision systems, algorithmic systems_, or just simply _algorithms_. In all of these cases, we are referring to the decision-making system as a whole.
 
