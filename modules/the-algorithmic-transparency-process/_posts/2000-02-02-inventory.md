@@ -2,9 +2,8 @@
 title: Iventory your algorithms
 ---
 
-_Suggested time: 5 minutes_
-
 ## Iventory your algorithmic systems
+_Suggested time: 5 minutes_
 
 The first step in implementing algorithmic transparency is to understand everywhere that algorithmic decision-making systems are being used within your organization.
 

@@ -2,7 +2,8 @@
 title: Implement transparency
 ---
 
-## STEP 3: Implement transparency into your algorithms
+## Implement transparency into your algorithms
+_Suggested time: 3 minutes_
 
 In the case, of non-procured tools, nce you have identified all the algorithms within your organization, their stakeholders, the stakeholders’ goals, and created ideas on what transparency features would be ideal, it is finally time to implement them! This step mainly falls on the responsibility of the technical team, but also includes conversations with stakeholders for testing and feedback purposes.
 
