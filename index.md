@@ -3,7 +3,7 @@ layout: index
 published: true
 ---
 
-<center><img src="../../../img/rai_logo.png" alt="Dashboard" width="6%"/></center>
+<center><img src="/img/rai_logo.png" alt="RAI Logo" width="6%"/></center>
 
 Welcome to 2033, the year when AI, while not yet sentient, can finally be considered responsible. Only systems that work well, improve efficiency, are fair, law abiding, and transparent are in use today. It's AI nirvana. You ask yourself: _"How did we get here?"_
 
