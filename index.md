@@ -19,6 +19,6 @@ To get started, proceed to the first module [All-About-Transparency](https://dat
 
 <hr>
 
-This course is [published](https://doi.org/3544549.3574169) in the 2023 ACM CHI Conference on Human Factors in Computing Systems proceedings. A pre-cursor to this work was also [published](https://www.cambridge.org/core/journals/data-and-policy/article/think-about-the-stakeholders-first-toward-an-algorithmic-transparency-playbook-for-regulatory-compliance/10D7F194DB250DDF3A30471B5CEB9326) in _Data & Policy_.
+This course is <href="https://doi.org/3544549.3574169" target="_blank">published</a> in the 2023 ACM CHI Conference on Human Factors in Computing Systems proceedings. A pre-cursor to this work was also <href="https://www.cambridge.org/core/journals/data-and-policy/article/think-about-the-stakeholders-first-toward-an-algorithmic-transparency-playbook-for-regulatory-compliance/10D7F194DB250DDF3A30471B5CEB9326" target="_blank">published</a> in _Data & Policy_.
 
 This research was supported in part by NSF Awards No. 1934464, 1922658, 1916505, 1928614, and 2129076.
