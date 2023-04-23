@@ -3,9 +3,13 @@ layout: index
 published: true
 ---
 
+<center><img src="../../../img/rai_logo.png" alt="Dashboard" width="6%"/></center>
+
 Welcome to 2033, the year when AI, while not yet sentient, can finally be considered responsible. Only systems that work well, improve efficiency, are fair, law abiding, and transparent are in use today. It's AI nirvana. You ask yourself: _"How did we get here?"_
 
-You may have played a major role! As more organizations use algorithmic systems, there is a **need for practitioners, industry leaders, managers, and executives to take part in making AI responsible.** In this course, we provide a playbook, detailing how to influence change and implement algorithmic transparency for your organization's algorithmic systems. 
+You may have played a major role! As more organizations use algorithmic systems, there is a **need for practitioners, industry leaders, managers, and executives to take part in making AI responsible.** In this course, we provide a playbook, detailing how to influence change and implement algorithmic transparency for your organization's algorithmic systems.
+
+This course is based on the <href="https://dataresponsibly.github.io/algorithmic-transparency-playbook/resources/transparency_playbook_camera_ready.pdf" target="_blank">Algorithmic Transparency Playbook</a>, which is a free-guide to algorithmic transparency published by the New York University Center for Responsible AI.
 
 <hr>
 
@@ -15,6 +19,6 @@ To get started, proceed to the first module [All-About-Transparency](https://dat
 
 <hr>
 
-This course is [published](https://doi.org/3544549.3574169) in the 2023 ACM CHI Conference on Human Factors in Computing Systems proceedings.
+This course is [published](https://doi.org/3544549.3574169) in the 2023 ACM CHI Conference on Human Factors in Computing Systems proceedings. A pre-cursor to this work was also [published](https://www.cambridge.org/core/journals/data-and-policy/article/think-about-the-stakeholders-first-toward-an-algorithmic-transparency-playbook-for-regulatory-compliance/10D7F194DB250DDF3A30471B5CEB9326) in _Data & Policy_.
 
 This research was supported in part by NSF Awards No. 1934464, 1922658, 1916505, 1928614, and 2129076.
