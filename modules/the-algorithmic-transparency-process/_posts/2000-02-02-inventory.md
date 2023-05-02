@@ -26,6 +26,6 @@ When inventorying your organization for algorithms, keep these two important poi
 
 - **Algorithms are not always big, complex systems.** Sometimes algorithmic systems can be deceptively simple --- and its important not to overlook them! For example, many schools use _Early Warning Systems_ that only look at three factors (a students' grades, attendance record, and the number of detentions they recieved) which are tallied together, sometimes on paper and without the help of a computer. Despite its simplicity, this is still an algorithm!
 
-- **Algorithms in procured tools.** Many organizations, especially in governmental or intergovernmental organizations, choose to procure their algorithmic tools instead of building them in-house. Don't forget to include these in your inventory! Even if they are not internal to your organization, there are still actions torwards transparency for these type of tools.
+- **Algorithms in procured tools.** Many organizations, especially in governmental or intergovernmental organizations, choose to procure their algorithmic tools instead of building them in-house. Don't forget to include these in your inventory! Even if they are not internal to your organization, there are still actions towards transparency for these type of tools.
 
 > **DELIVERABLE:** An inventory list of all the algorithms being used by your organization, including those that are procured.

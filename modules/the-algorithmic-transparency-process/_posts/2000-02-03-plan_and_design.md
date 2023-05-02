@@ -9,15 +9,13 @@ Once you have identified all the algorithmic decision-making systems within your
 
 This second step is broken up into 4 sub-steps and is based on our **stakeholder-first approach** to developing transparency that begins with thinking about algorithmic stakeholders first, and ends with creating transparency features for your algorithms that meet stakeholder needs.
 
-> A _transparency feature_ is any artificat accompayning an algorithm that helps increase its ability to be understood by a human user. Some examples include a dashboard, graph, report, paper hand-out, or even an informational pop-up window on a web page.
+> A _transparency feature_ is any artifact accompanying an algorithm that helps increase its ability to be understood by a human user. Some examples include a dashboard, graph, report, paper hand-out, or even an informational pop-up window on a web page.
 
 <br>
 
 ### Consider all the relevant stakeholders of each algorithm
 
-Earlier in the course we discussed several important stakeholders of algorithmic systems. These included **managers** within an organization and the **affected persons** who are impacted by the outcome of the stakeholder. Notably, stakeholders may be both internal and external to your organization.
-
-Another stakeholder group is **humans-in-the-loop**, or those who are actually responsible for using the algorithmic tool. These are often distinct from those developing the algorithm, and some examples include an underwriter using an algorithm to determine if loan applicants should be accepted or rejected, or hospital staff using an algorithm to predict the risk a patient will develop a disease.
+In an earlier seciton of this course, we discussed the important stakeholders of algorithmic systems. As a reminder, these include practitioenrs, managers, aggected persons, humans-in-the-loop, and regulators. Notably, stakeholders may be both internal and external to your organization.
 
 Importantly, **not every stakeholder has the same needs when it comes to algorithmic transparency, and so those implementing transparency should be thoughtful about each type of stakeholder.** There are 5 categories of stakeholders that you should consider (note that every algorithm will have all 5 stakeholders):
 
