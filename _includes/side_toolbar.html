@@ -27,7 +27,7 @@
 			<div class="title">
 				Next module:
 			</div>
-			<a rel="next" class="next" href="{{ site.baseurl }}{{ next_post.url }}"> {{ next }}
+			<a rel="next" class="next" href="{{ site.baseurl }}{{ next_post.url }}"> {{ next|replace:"-"," "  }}
 			</a>
 		</div>
 	{% endif %}
