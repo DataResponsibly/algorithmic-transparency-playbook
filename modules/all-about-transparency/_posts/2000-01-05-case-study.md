@@ -25,15 +25,17 @@ In this scenario, once a person registers that they are unemployed, they are ass
 
 Using what we learned about stakeholders and their goals, we can create the following table:
 
-<vbr>
+<br>
 
-| **Stakeholder**                                         | **Goals**                                                                                                                                                                                    |
+
+| Stakeholder                                         | Goals                                                                                                                                                                                    |
 |-----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Humans-in-the-loop (job counselors)                 | Learning and support, validity. The job counselor may want to know how the system works overall, and why a particular individual is assigned to a certain risk score.                    |
 | Affected persons (unemlpoyed individual)            | Recourse, trust. An individual may believe they are high risk and deserve interventions regardless of the output of the algorithm (or vice-versa)                                        |
 | Managers (ex. officials at the Department of Labor) | Learning and support, trust, validity, fairness. The managers may have similiar questions to the job counselor and practitioner, plus concerns about the overall fairness of the system. |
 | Compliance officers (ex. auditors)                  | Fairness, privacy. Since the system is working with sensitive data, auditors will want to make sure the system is compliant with applicable fairness and privacy laws.                   |
 | Practitioners                                       | Learning and support, validity, trust. Even though the system is already built, practitioners may be interested in monitoring its performance over time.                               |
+
 
 <br>
 
