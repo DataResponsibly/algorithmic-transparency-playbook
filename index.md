@@ -3,6 +3,10 @@ layout: index
 published: true
 ---
 
+**This course is currenlty under construction.**
+
+<br>
+
 <center><img src="img/rai_logo.png" alt="RAI Logo" width="25%"/></center>
 
 <br>
