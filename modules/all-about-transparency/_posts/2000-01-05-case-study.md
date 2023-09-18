@@ -2,7 +2,7 @@
 title: Case Study
 ---
 
-## Case Study: Algorithms Used in Public Employment
+## Algorithms Used in Public Employment
 _Suggested time: 10 minutes_
 
 The purpose of this case study is to make some of the ideas we discussed about stakeholders, goals, and transparency tools more concrete.
